@@ -8,21 +8,9 @@
 </head>
 <body>
     <form id="frm1" action="">
-        First Name: <input type="text" name="fname" id="fname" value="First Name"><br><br>
-        Last Name:  <input type="last" name="lname" id="lname" value="Last Name"><br><br>
-        <input type="submit" value="Submit" onclick="formValidation()">
+        First Name: <input type="text" name="fname" id="fname" value="First Name" required><br><br>
+        Last Name:  <input type="last" name="lname" id="lname" value="Last Name" required><br><br>
+        <input type="submit" value="Submit">
     </form>
-
-    <script>
-        function formValidation() {
-            if (document.getElementById("fname").value == "First Name") {
-                window.alert("Enter your first name");
-            }
-
-            else if (document.getElementById("lname").value == "Last Name") {
-                window.alert("Enter your last name");
-            }
-        }
-    </script>
 </body>
 </html>
